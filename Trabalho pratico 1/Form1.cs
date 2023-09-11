@@ -196,6 +196,7 @@ namespace Trabalho_pratico_1
                 }
                 catch (Exception e)
                 {
+                    MessageBox.Show(e.Message);
                 }
             }
         }
