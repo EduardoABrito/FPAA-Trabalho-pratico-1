@@ -221,6 +221,7 @@
             this.btnExportar.TabIndex = 21;
             this.btnExportar.Text = "Exportar Excel";
             this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // dtgMedias
             // 
@@ -242,7 +243,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(225, 39);
             this.label6.TabIndex = 23;
-            this.label6.Text = "Media Testes";
+            this.label6.Text = "Média Testes";
             // 
             // Form1
             // 

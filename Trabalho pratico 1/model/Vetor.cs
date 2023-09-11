@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Trabalho_pratico_1.model
@@ -24,18 +25,14 @@ namespace Trabalho_pratico_1.model
 
         public Vetor Clone()
         {
-            return new Vetor(this.dados, this.ordenado );
-        }
+            int[] dadosAux = new int[dados.Length];
 
-        public double testeOrdenarQuicksort()
-        {
+            for (int i = 0; i < this.dados.Length; i++)
+            {
+                dadosAux[i] =  this.dados[i];
+            }
 
-            return 0.1;
-        }
-
-        public double testeOrdenarMergeSort()
-        {
-            return 0.2;
+            return new Vetor(dadosAux, this.ordenado );
         }
 
         public void popularVetor()
